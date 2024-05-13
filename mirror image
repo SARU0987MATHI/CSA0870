@@ -1,0 +1,10 @@
+def reverse_to_mirror(number):
+    return int(str(number)[::-1])
+
+numbers = ["Sell123", 5489236, "Abc-abc", "%$$$$^&", -123456]
+for num in numbers:
+    try:
+        mirror = reverse_to_mirror(num)
+        print(f"Mirror image of {num}: {mirror}")
+    except ValueError:
+        print(f"Cannot reverse {num} to create a mirror number.")
