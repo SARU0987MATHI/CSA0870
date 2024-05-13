@@ -1,0 +1,9 @@
+def countVowelStrings(n):
+    return (n + 1) * (n + 2) * (n + 3) * (n + 4) // 24
+
+
+print(countVowelStrings(1))   
+print(countVowelStrings(2))  
+print(countVowelStrings(33))  
+print(countVowelStrings(-5))
+print(countVowelStrings(10))  
